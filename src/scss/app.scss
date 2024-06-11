@@ -1,0 +1,202 @@
+@import './scssContant.scss';
+
+@mixin reset-hover-effect {
+    &:hover {
+      color: #000000;
+      transition: all 0.3s ease-in-out;
+  
+      &::after {
+        content: "";
+        width: 30px;
+        height: 2px;
+        background-color: black;
+        display: block;
+        position: absolute;
+        transition: width 0.3s ease-in-out;
+      }
+    }
+  }
+
+  @mixin border-bottom($color) {
+    &::after {
+      content: "";
+      width: 40px;
+      height: 3px;
+      background-color: $color;
+      display: block;
+      position: relative;
+      bottom: -5px;
+      transition: width 0.3s ease-in-out;
+    }
+  }
+  
+  .navbar-brand {
+    position: relative; 
+    font-size: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    & :hover{
+        color: #000000;
+    }
+    & a {
+      text-decoration: none;
+      color: #000000;
+      font-weight: 700;
+    }
+  }
+  
+  .nav-link {
+    position: relative;
+    text-decoration: none;
+    & a {
+        @include reset-hover-effect;
+      text-decoration: none;
+      color: gray;
+    }
+  }
+  .navbar-collapse{
+    z-index: 9999999999;
+  }
+  // .social-media-wraper{
+  //   position: sticky;
+  //   top: 35%;
+  //   right: 0;
+  //   padding: 10px;
+  //   background-color: #f1f1f1;
+  //   border-radius: 8px 0 0 8px;
+  //   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  // }
+
+  .sticky-div {
+    position: fixed;
+    bottom: 5%;
+    right: 10px;
+    font-size: 30px;
+    color: white;
+    background-color: #070707;
+    z-index: 9999999999;
+ }
+  .social-media-wraper ul li{
+    list-style: none;
+  }
+  .social-media-wraper ul li a svg {
+    width: 20px;
+  }
+  .social-media-wraper ul li a svg:hover {
+    transform: scale(1.5);
+    transition: 0.8s;
+  }
+  .header{
+    // height: 400px; 
+    background: url('src/assets/sunset.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  .imger_wraper{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: antiquewhite;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+  .designation_title{
+    color: $base-color;
+    font-size: $heiding-font-size;
+  }
+  .banner_wraper {
+    width: 100%;
+    // height: 55%;
+  }
+  .about_wraper{
+    padding: 60px 20px 20px;
+  }
+  .line-wraper{
+    width: 30%;
+  }
+  .line::after{
+    content: "";
+    // width: 30%;
+    height: 4px;
+    display: block;
+    position: relative;
+    margin-left: 5px;
+    background-color: tomato;
+  }
+  .card_img{
+    width: 300px;
+    box-shadow: rgba(256, 256, 256, 0.12) 0px 2px 4px 0px, rgba(256, 256, 256, 0.32) 0px 2px 16px 0px;  
+  }
+  .card_body{
+    display: flex;
+    flex-direction: row !important;
+    justify-items: center;
+    align-items: center;
+    background: transparent !important;
+    box-shadow: rgba(256, 256, 256, 0.12) 0px 2px 4px 0px, rgba(256, 256, 256, 0.32) 0px 2px 16px 0px;  
+  }
+  .card_about{
+    @include border-bottom(tomato);
+  }
+  .carousel-item {
+    height: 500px; 
+  }
+  .carousel-item img {
+      object-fit: cover; 
+      height: 100%;
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon{
+   visibility: hidden;
+  }
+  .download_wraper{
+    background: url('src/assets/darkbg.jpg') no-repeat center center;
+    background-size: cover;
+  }
+   .home-section{
+    background: url('src/assets/shiny.svg') no-repeat center center;
+    background-size: cover;
+    }
+    .left_container{
+      align-items: center;
+    }
+
+  @media screen and (max-width: 568px) {
+    .home-section{
+      display: flex;
+      align-items: flex-end;
+    }
+    .left_container{
+      align-items: left;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .card_body{
+      display: flex; 
+      flex-direction: column !important;
+      justify-items: center;
+      align-items: center;
+    }
+    .carousel-item {
+      height: 300px; 
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .navbar_main{
+      position: relative;
+    }
+    .navbar-collapse{
+      position: absolute;
+      background-color: #686868;
+      top: 48px;
+      right: 10px;
+      width: 120px;
+      color: white;
+      padding-left: 10px;
+    }
+    .nav-link a{
+      color: #efefef;
+      transition: all 0.3s ease-in-out;
+    }
+   
+  }
+
+  
