@@ -63,7 +63,7 @@ const About = () => {
                                     </Col>
                                 </Row>
                             </Card.Text>
-                            <Button variant="danger"><Link className='text-white text-decoration-none' to={'/about'}>About</Link></Button>
+                            <Button variant="danger"><Link className='text-white text-decoration-none' to={'/contact'}>Contact Me</Link></Button>
                         </Card.Body>
                     </Card>
                     </Col>

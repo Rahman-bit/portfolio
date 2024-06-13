@@ -7,7 +7,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NavigationBar from "./components/NavigationBar";
 import Admin from "./pages/Admin";
-import SocialMediaLinks from './pages/SocialMediaLinks';
+import WhatsappIcon from './components/WhatsappIcon';
 
 function App() {
 
@@ -22,7 +22,7 @@ function App() {
        <Route path="/contact" element={ <Contact />} />
        <Route path="/admin" element={ <Admin />} />
      </Routes>
-     <SocialMediaLinks />
+     <WhatsappIcon />
     </Router>
   )
 }

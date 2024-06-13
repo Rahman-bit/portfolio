@@ -1,40 +1,111 @@
+@import '../scss/scssContant.scss';
 
-.input_wraper{
-  position: relative;
-  line-height: 44px;
+.contact_wraper{
+    height: 100vh;
+    padding: 10px;
+    overflow: hidden;
 }
-
-.input_lable{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  color: #d3d3d3;
-  transition: 0.2s all;
+.form_card{
+    background-color: $card-bg-color !important;
+}
+.form-control {
+    color: #d3d3d3 !important;
+    background-color: transparent !important;
+}
+.input-group {
+   position: relative;
+   width: 250px;
+   height: 44px;
+   line-height: 44px;
+}
+.form-label {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   color: #d3d3d3;
+   transition: 0.2s all;
   cursor: text;
 }
-.input_field {
-    width: 100%;
-    border: 0;
-    outline: 0;
-    padding: 0.5rem 0;
-    border-bottom: 2px solid #d3d3d3;
-    box-shadow: none;
-    color: #111;
-  }
-  .input_field:invalid {
-    outline: 0;
-    // color: #ff2300;
-    //   border-color: #ff2300;
-  }
-  .input_field:focus,
-  .input_field:valid {
-    border-color: #00dd22;
-  }
-  .input_field:focus~label,
-  .input_field:valid~label {
-    font-size: 14px;
-    position: absolute;
-    top: -24px;
-    color: #00dd22;
-  }
+.input_filed {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #d3d3d3;
+  box-shadow: none;
+  color: #111;
+}
+input:invalid {
+  outline: 0;
+}
+.input_filed:focus{
+  box-shadow: none !important;
+}
+.input_filed:focus,
+.input_filed:valid {
+  border-color: #00dd22;
+}
+.input_filed:focus~label,
+.input_filed:valid~label {
+  font-size: 14px;
+  top: -24px;
+  color: #00dd22;
+}
+.input_filed{
+  border: none !important;
+  border-bottom: 2px solid #a6a6a6  !important;
+  border-radius: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .input_wraper{
+//   position: relative;
+//   line-height: 44px;
+// }
+// .input_lable{
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   color: #d3d3d3;
+//   transition: 0.2s all;
+//   cursor: text;
+// }
+// .input_field {
+//     width: 100%;
+//     border: 0;
+//     outline: 0;
+//     padding: 0.5rem 0;
+//     border-bottom: 2px solid #d3d3d3;
+//     box-shadow: none;
+//     color: #111;
+//   }
+//   .input_field:invalid {
+//     outline: 0;
+//     // color: #ff2300;
+//     //   border-color: #ff2300;
+//   }
+//   .input_field:focus,
+//   .input_field:valid {
+//     border-color: #00dd22;
+//   }
+//   .input_field:focus~label,
+//   .input_field:valid~label {
+//     font-size: 14px;
+//     position: absolute;
+//     top: -24px;
+//     color: #00dd22;
+//   }

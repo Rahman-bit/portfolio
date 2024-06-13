@@ -1,0 +1,14 @@
+@import '../scss/scssContant.scss';
+
+.title_wraper{
+   font-weight: 800;
+   text-shadow: $text-shadow;
+}
+.title_wraper span{
+   color: green;
+}
+.portfolioCard{
+   background-color: $card-bg-color !important;
+}
+
+  
