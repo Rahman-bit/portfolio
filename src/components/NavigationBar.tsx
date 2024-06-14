@@ -10,7 +10,7 @@ function NavigationBar() {
       <Container fluid className='navbar_main'>
         <Navbar.Brand>
           <Link to={'/'}> Syed
-            {/* <img className="bannerImg" src={'src/assets/Rahman.png'} /> */}
+            {/* <img className="bannerImg" src={'src/assets/logo.jpg'} /> */}
           </Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
