@@ -1,21 +1,12 @@
-import { Container, Row, Col, Image, Card } from "react-bootstrap"
+import { Container, Row, Col, Card } from "react-bootstrap"
 // import CarouselImg from "../components/CarouselImg"
 import './portfolio.scss';
 import '../scss/app.scss';
 import SocialMediaLinks from './SocialMediaLinks';
-import { Link } from 'react-router-dom';
-import { FaFacebook, FaGithub, FaLinkedin  } from "react-icons/fa";
-import { BsInstagram } from "react-icons/bs";
-import { MdMarkEmailRead } from "react-icons/md";
 
 const Portfolio = () => {
   return (
     <Container fluid className="bg-dark text-white">
-      <Row>
-          <Col className="p-0">
-            {/* <Image className="" src={'src/assets/hells.jpg'} fluid /> */}
-          </Col>
-      </Row>
       <Row className="flex-column">
           <Col className='py-3 '>
               <h2 className="title_wraper"><span className="">Abo</span>ut Me</h2>
