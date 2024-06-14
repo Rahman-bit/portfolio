@@ -48,7 +48,7 @@ const Portfolio = () => {
       </Row>
       <Row className="flex-column">
           <Col className='py-3 d-flex align-items-center'>
-              <h2 className="title_wraper"><span>Pro</span>ojects</h2>
+              <h2 className="title_wraper"><span>Pro</span>jects</h2>
           </Col>
           <Col>
             <Card className="text-white portfolioCard">
@@ -62,7 +62,7 @@ const Portfolio = () => {
       </Row>
       <Row className="flex-column">
           <Col className='py-3 d-flex align-items-center'>
-              <h2 className="title_wraper"><span>Exe</span>pereince</h2>
+              <h2 className="title_wraper"><span>Exp</span>ereince</h2>
           </Col>
           <Col>
             <Card className="text-white portfolioCard">
@@ -83,13 +83,13 @@ const Portfolio = () => {
       </Row>
       <Row className="flex-column">
           <Col className='py-3 d-flex align-items-center'>
-              <h2 className="title_wraper"><span>Edu</span>ucation</h2>
+              <h2 className="title_wraper"><span>Edu</span>cation</h2>
           </Col>
           <Col>
               <Card className="text-white portfolioCard">
                 <Card.Body>
                   <Card.Text> 
-                    <h4>Bachelor of Science in Computer Science</h4>
+                    <h5>Bachelor of Science in Computer Science</h5>
                     <p>Institution : Rayaalaseema Univercity Kurnool</p>
                     <p>Graduation Date : May 2019</p>
                   </Card.Text>

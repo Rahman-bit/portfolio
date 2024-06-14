@@ -15,13 +15,35 @@
         content: "";
         width: 30%;
         height: 2px;
-        background-color: black;
+        background-color: rgb(255, 255, 255);
         display: block;
         position: absolute;
         transition: width 0.3s ease-in-out;
       }
     }
   }
+
+
+
+  // .nav-link a:hover{
+  //   transform: scale(1.5);
+  //   transition: all 0.3s ease-in-out;
+  //  }
+  //  .nav-link a {
+  //      position: relative;
+  //  }
+  //  .nav-link a::after {
+  //      content: '';
+  //      position: absolute;
+  //      left: 0;
+  //      bottom: -20px;
+  //      height: 2px;
+  //      width: 0;
+  //      background-color: white;
+  //      transition: width 0.5s ease-in-out;
+  //    }
+
+
 
   @mixin border-bottom($color) {
     &::after {
@@ -71,6 +93,10 @@
     right: 10px;
     font-size: 40px;
     z-index: 9999999999;
+  }
+  .sticky-whatsapp:hover{
+    transform: scale(1.5);
+    transition: all 0.5s ease-in-out;
   }
 
   .media-links ul li{
@@ -204,10 +230,11 @@
       position: absolute;
       background-color: #686868;
       top: 48px;
-      right: 10px;
-      width: 120px;
+      right: 0px;
+      width: 100px;
       color: white;
       padding-left: 10px;
+      border-bottom-left-radius: 5px;
     }
     .nav-link a{
       color: #efefef;
