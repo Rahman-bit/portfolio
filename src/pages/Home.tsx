@@ -26,7 +26,7 @@ const Home = () => {
                     </div>
                 </Col>
                 <Col>
-                    <Image className="bannerImg" src={'src/assets/syednobg.png'} fluid />
+                    <Image className="bannerImg" src={'assets/syednobg.png'} fluid />
                 </Col>
             </Row>
             <Row>

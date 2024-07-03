@@ -30,7 +30,7 @@ const About = () => {
         <Container fluid className="py-5 d-flex justify-content-center align-items-center text-center header">
             <Row className='d-flex flex-column justify-content-center align-items-center banner_wraper'>
                 <Col className='pt-3 pb-4'>
-                    <Image className="imger_wraper" src={'src/assets/syednobg.png'} />
+                    <Image className="imger_wraper" src={'assets/syednobg.png'} />
                 </Col>
                 <Col><h3 className='text-white'>Rahaman</h3></Col>
                 <Col className='pt-2'>
@@ -43,7 +43,7 @@ const About = () => {
                     <Col lg={10}>
                     <Card className='card_body d-flex' >
                         <Card.Text className='m-0 p-3'>
-                            <Card.Img className='card_img bg-warning rounded' variant="left" src={'src/assets/syednobg.png'} style={{ objectFit: 'cover' }} />
+                            <Card.Img className='card_img bg-warning rounded' variant="left" src={'assets/syednobg.png'} style={{ objectFit: 'cover' }} />
                         </Card.Text>
                         <Card.Body>
                             <h3 className='text-danger'>Discover</h3>

@@ -15,35 +15,13 @@
         content: "";
         width: 30%;
         height: 2px;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(190, 55, 55);
         display: block;
         position: absolute;
         transition: width 0.3s ease-in-out;
       }
     }
   }
-
-
-
-  // .nav-link a:hover{
-  //   transform: scale(1.5);
-  //   transition: all 0.3s ease-in-out;
-  //  }
-  //  .nav-link a {
-  //      position: relative;
-  //  }
-  //  .nav-link a::after {
-  //      content: '';
-  //      position: absolute;
-  //      left: 0;
-  //      bottom: -20px;
-  //      height: 2px;
-  //      width: 0;
-  //      background-color: white;
-  //      transition: width 0.5s ease-in-out;
-  //    }
-
-
 
   @mixin border-bottom($color) {
     &::after {
@@ -138,7 +116,7 @@
   .homeBanner{
     height: 100vh;
     padding: 10px;
-    background: url('src/assets/shiny.svg') no-repeat center center;
+    background: url('assets/shiny.svg') no-repeat center center;
     background-size: cover;
     overflow: hidden;
   }
@@ -146,7 +124,7 @@
   //   -webkit-box-reflect: below;
   // }
   .header{
-    background: url('src/assets/sunset.jpg') no-repeat center center;
+    background: url('assets/sunset.jpg') no-repeat center center;
     background-size: cover;
   }
   .imger_wraper{
@@ -203,7 +181,7 @@
    visibility: hidden;
   }
   .download_wraper{
-    background: url('src/assets/darkbg.jpg') no-repeat center center;
+    background: url('assets/darkbg.jpg') no-repeat center center;
     background-size: cover;
   }
   .left_container{

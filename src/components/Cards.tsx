@@ -1,6 +1,7 @@
 import Card from "react-bootstrap/esm/Card"
 import Col from "react-bootstrap/esm/Col";
 import '../scss/app.scss';
+
 interface CardProps {
     key : any;
     elm : {
@@ -15,7 +16,7 @@ const Cards: React.FC<CardProps> = ({key, elm}) => {
     <>
         <Col key={key} lg="4">
             <Card>
-            <Card.Img variant="top" src={icon} />
+                <Card.Img variant="top" src={icon} />
                 <Card.Body>
                     <Card.Title> {title} </Card.Title>
                     <Card.Text> {text} </Card.Text>
