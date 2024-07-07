@@ -111,8 +111,6 @@
      width: 100%;
    }
 
-
-
   .homeBanner{
     height: 100vh;
     padding: 10px;
@@ -124,7 +122,7 @@
   //   -webkit-box-reflect: below;
   // }
   .header{
-    background: url('assets/sunset.jpg') no-repeat center center;
+    background: url('/public/assets/sunset.jpg') no-repeat center center;
     background-size: cover;
   }
   .imger_wraper{
@@ -142,7 +140,7 @@
     width: 100%;
   }
   .about_wraper{
-    padding: 60px 20px 20px;
+    padding: 60px 0px 20px;
   }
   .line-wraper{
     width: 30%;
@@ -181,7 +179,7 @@
    visibility: hidden;
   }
   .download_wraper{
-    background: url('assets/darkbg.jpg') no-repeat center center;
+    background: url('/public/assets/darkbg.jpg') no-repeat center center;
     background-size: cover;
   }
   .left_container{
@@ -198,6 +196,7 @@
     .carousel-item {
       height: 300px; 
     }
+    
   }
 
   @media screen and (max-width: 992px) {

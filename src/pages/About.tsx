@@ -38,34 +38,34 @@ const About = () => {
                 </Col>
             </Row>            
         </Container>
-        <Container fluid className='bg-dark text-white'>
+        <Container fluid className='bg-dark text-white pb-5'>
                 <Row className='about_wraper d-flex justify-content-center align-items-center'>
-                    <Col lg={10}>
-                    <Card className='card_body d-flex' >
-                        <Card.Text className='m-0 p-3'>
-                            <Card.Img className='card_img bg-warning rounded' variant="left" src={'assets/syednobg.png'} style={{ objectFit: 'cover' }} />
-                        </Card.Text>
-                        <Card.Body>
-                            <h3 className='text-danger'>Discover</h3>
-                            <Card.Text className='card_about text-white'>About Me</Card.Text> 
-                            <Card.Text className='text-white'>I have 3+ years of IT experience developing accessible and performant web interfaces. Adept in HTML 5, CSS2/CSS3, Bootstrap, SCSS, JavaScript, React JS, Redux, JQuery, JSON, AJAX, GIT, GitLab.</Card.Text>
-                            <Card.Text>
-                                <Row className='m-0 p-2 text-white d-flex justify-content-center border border-1 border-danger rounded'>
-                                    <Col className='p-0'>
-                                        <Card.Text>Name : Rahaman S</Card.Text>
-                                        <Card.Text>Phone : +91 9885266537</Card.Text>
-                                        <Card.Text>Experience : 3.4 Years</Card.Text>
-                                    </Col>
-                                    <Col className='p-0'>
-                                        <Card.Text>Age : 27</Card.Text>
-                                        <Card.Text>Address : Nandyala</Card.Text>
-                                        <Card.Text>Freelance : Available</Card.Text>
-                                    </Col>
-                                </Row>
+                    <Col>
+                        <Card className='card_body d-flex' >
+                            <Card.Text className='m-0 p-3'>
+                                <Card.Img className='card_img bg-warning rounded' variant="left" src={'assets/syednobg.png'} style={{ objectFit: 'cover' }} />
                             </Card.Text>
-                            <Button variant="danger"><Link className='text-white text-decoration-none' to={'/contact'}>Contact Me</Link></Button>
-                        </Card.Body>
-                    </Card>
+                            <Card.Body>
+                                <h3 className='text-danger'>Discover</h3>
+                                <Card.Text className='card_about text-white'>About Me</Card.Text> 
+                                <Card.Text className='text-white'>I have 3+ years of IT experience developing accessible and performant web interfaces. Adept in HTML 5, CSS2/CSS3, Bootstrap, SCSS, JavaScript, React JS, Redux, JQuery, JSON, AJAX, GIT, GitLab.</Card.Text>
+                                <Card.Text>
+                                    <Row className='m-0 p-2 text-white d-flex justify-content-center border border-1 border-danger rounded'>
+                                        <Col className='p-0'>
+                                            <Card.Text>Name : Rahaman S</Card.Text>
+                                            <Card.Text>Phone : +91 9885266537</Card.Text>
+                                            <Card.Text>Experience : 3.4 Years</Card.Text>
+                                        </Col>
+                                        <Col className='p-0'>
+                                            <Card.Text>Age : 27</Card.Text>
+                                            <Card.Text>Address : Nandyala</Card.Text>
+                                            <Card.Text>Freelance : Available</Card.Text>
+                                        </Col>
+                                    </Row>
+                                </Card.Text>
+                                <Button variant="danger"><Link className='text-white text-decoration-none' to={'/contact'}>Contact Me</Link></Button>
+                            </Card.Body>
+                        </Card>                 
                     </Col>
                 </Row>
                 <Row className='bg-s pt-4 pb-4'> 
