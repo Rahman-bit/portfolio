@@ -7,10 +7,10 @@ import '../scss/app.scss';
 
 function NavigationBar() {
   const [expanded, setExpanded] = useState(false);
-  const navRef = useRef(null);
+  const navRef = useRef<HTMLButtonElement | null>(null);
 
   const handleDocumentClick = (e:any) => {
-    if (navRef.current && !navRef.current.contains(e.target)) {
+    if (navRef.current && !navRef.current.contains(e.target as Node)) {
       setExpanded(false);
       // console.log('Clicked outside the navbar, collapsing.');
     } else {
@@ -40,7 +40,7 @@ function NavigationBar() {
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={()=> setExpanded(!expanded)}
-          ref={navRef}
+          ref ={navRef}
         />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">

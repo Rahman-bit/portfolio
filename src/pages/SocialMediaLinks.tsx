@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import '../scss/app.scss';
-import { FaFacebook, FaGithub, FaLinkedin  } from "react-icons/fa";
+import { FaGithub, FaLinkedin  } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { MdMarkEmailRead } from "react-icons/md";
 // import { Image } from 'react-bootstrap';
