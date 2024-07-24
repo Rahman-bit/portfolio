@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <Container fluid className="p-0">
         <div className="homeBanner bg-dark">
-            <Row className="pt-5 align-items-center text-white">
+            <Row className="pt-5 responsive_home align-items-center text-white">
                 <Col className="py-2 pr-1 d-flex flex-column align-items-center">
                     <div>   
                         <div className="d-flex align-items-center">
@@ -27,11 +27,6 @@ const Home = () => {
                 </Col>
                 <Col>
                     <Image className="bannerImg" src={'assets/syednobg.png'} fluid />
-                </Col>
-            </Row>
-            <Row>
-                <Col>            
-                {/* <Image className="" src={'src/assets/moon.svg'} fluid /> */}
                 </Col>
             </Row>
         </div>

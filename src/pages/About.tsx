@@ -40,7 +40,7 @@ const About = () => {
         </Container>
         <Container fluid className='bg-dark text-white pb-5'>
                 <Row className='about_wraper d-flex justify-content-center align-items-center'>
-                    <Col>
+                    <Col lg={10}>
                         <Card className='card_body d-flex' >
                             <Card.Text className='m-0 p-3'>
                                 <Card.Img className='card_img bg-warning rounded' variant="left" src={'assets/syednobg.png'} style={{ objectFit: 'cover' }} />
@@ -53,12 +53,12 @@ const About = () => {
                                     <Row className='m-0 p-2 text-white d-flex justify-content-center border border-1 border-danger rounded'>
                                         <Col className='p-0'>
                                             <Card.Text>Name : Rahaman S</Card.Text>
-                                            <Card.Text>Phone : +91 9885266537</Card.Text>
-                                            <Card.Text>Experience : 3.4 Years</Card.Text>
+                                            <Card.Text>Phone : +91 9392306208</Card.Text>
+                                            <Card.Text>Experience : 3.5 Years</Card.Text>
                                         </Col>
                                         <Col className='p-0'>
                                             <Card.Text>Age : 27</Card.Text>
-                                            <Card.Text>Address : Nandyala</Card.Text>
+                                            <Card.Text>Address : Bangaluru</Card.Text>
                                             <Card.Text>Freelance : Available</Card.Text>
                                         </Col>
                                     </Row>

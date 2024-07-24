@@ -7,18 +7,25 @@
   }
  
   @mixin reset-hover-effect {
+    position: relative; 
+    &::after {
+      content: "";
+      width: 0; 
+      height: 3px;
+      background-color: rgb(190, 55, 55);
+      display: block;
+      position: absolute;
+      left: 0; 
+      bottom: 0;
+      transition: width 0.5s ease-in-out;
+    }
+  
     &:hover {
       color: #000000;
-      transition: all 0.3s ease-in-out;
+      transition: color 0.3s ease-in-out;
   
       &::after {
-        content: "";
-        width: 30%;
-        height: 2px;
-        background-color: rgb(190, 55, 55);
-        display: block;
-        position: absolute;
-        transition: width 0.3s ease-in-out;
+        width: 30%; 
       }
     }
   }
@@ -50,13 +57,12 @@
   }
   
   .nav-link {
-    position: relative;
+    padding: 10px 12px 2px 2px !important;
     text-decoration: none;
-    & a {
-        @include reset-hover-effect;
-      text-decoration: none;
-      color: gray;
-    }
+    font-weight: 600 !important;
+    @include reset-hover-effect;
+    text-decoration: none;
+    color: gray;
   }
 
   @mixin list-style-type{
@@ -186,6 +192,12 @@
     align-items: center;
   }
 
+  @media screen and (max-width: 568px) {
+    .responsive_home{
+      display: flex;
+      flex-direction: column;
+    }
+  }
   @media screen and (max-width: 768px) {
     .card_body{
       display: flex; 
@@ -196,7 +208,6 @@
     .carousel-item {
       height: 300px; 
     }
-    
   }
 
   @media screen and (max-width: 992px) {
@@ -205,7 +216,7 @@
     }
     .navbar-collapse{
       position: absolute;
-      background-color: #686868;
+      background-color: #f8f9fa;
       top: 48px;
       right: 0px;
       width: 100px;
