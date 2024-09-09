@@ -38,7 +38,7 @@ const Contact: React.FC  = () => {
     try {
       console.log("Form Data onSubmit:", formData);
       // Send a POST request
-      const response = await axios.post('http://localhost:5500/user', formData, {
+      const response = await axios.post('https://portfolio-backend-two-murex.vercel.app/user', formData, {
         headers: {
           'Content-Type': 'application/json',
         },
