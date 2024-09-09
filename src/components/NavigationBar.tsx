@@ -35,7 +35,7 @@ function NavigationBar() {
     >
       <Container fluid className="navbar_main">
         <Navbar.Brand>
-          <Link to="/">Syed</Link>
+          <Link to="/">Sayyed</Link>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

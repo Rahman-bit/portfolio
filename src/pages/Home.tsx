@@ -20,7 +20,7 @@ const Home = () => {
                         </div>
                         <h3 className="py-2" style={{lineHeight:'1.6'}}><span>I'm</span> <span style={{color:'#FC0136'}}>Sayyed</span> Abdul Rahaman</h3>
                         {/* <h4>I'm a <span className="text-danger">Reactjs</span> | <span className="text-danger">JavaScript</span> Developer</h4> */}
-                        <p>This is Syed Looking for React Developer Job.</p>
+                        <p>This is Sayyed Looking for React Developer Position.</p>
                         <Button variant="danger"><Link className='text-white text-decoration-none' to={'/about'}>About</Link></Button>
                         <SocialMediaLinks />
                     </div>
