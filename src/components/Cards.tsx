@@ -2,7 +2,6 @@ import Card from "react-bootstrap/esm/Card"
 import Col from "react-bootstrap/esm/Col";
 import '../scss/app.scss';
 import '../scss/serviceCards.scss';
-import { useState } from "react";
 
 interface CardProps {
         id : number,
@@ -13,14 +12,10 @@ interface CardProps {
     }
 const Cards: React.FC<CardProps> = (elm:CardProps) => {
     const { id, icon, title, description, features } = elm;
-    // const[ isHover, setIsHovered] = useState<Boolean>(false)
   return (
     <>
         <Col key={id} lg="4" className="d-flex justify-content-center g-3">
-            <Card className="card-hover card-fixed-width" 
-                // onMouseEnter={() => setIsHovered(true)} 
-                // onMouseLeave={() => setIsHovered(false)}
-            >
+            <Card className="card-hover card-fixed-width">
             <i className={`bi ${icon} my-3 text-center`} style={{ fontSize: '3.5rem', }}> </i>
                 <Card.Body className="">
                     <Card.Title> {title} </Card.Title>
