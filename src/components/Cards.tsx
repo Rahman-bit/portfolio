@@ -1,25 +1,33 @@
 import Card from "react-bootstrap/esm/Card"
 import Col from "react-bootstrap/esm/Col";
 import '../scss/app.scss';
+import '../scss/serviceCards.scss';
+import { useState } from "react";
 
 interface CardProps {
-    key : any;
-    elm : {
+        id : number,
         icon : any;
-        title : String;
-        text : String;
+        title : string;
+        description : string;
+        features : string[]
     }
-}
-const Cards: React.FC<CardProps> = ({key, elm}) => {
-    const { icon, title, text } = elm;
+const Cards: React.FC<CardProps> = (elm:CardProps) => {
+    const { id, icon, title, description, features } = elm;
+    const[ isHover, setIsHovered] = useState<Boolean>(false)
   return (
     <>
-        <Col key={key} lg="4">
-            <Card>
-                <Card.Img variant="top" src={icon} />
-                <Card.Body>
+        <Col key={id} lg="4" className="d-flex justify-content-center g-3">
+            <Card className="card-hover card-fixed-width" 
+                onMouseEnter={() => setIsHovered(true)} 
+                onMouseLeave={() => setIsHovered(false)}
+            >
+            <i className={`bi ${icon} my-3 text-center`} style={{ fontSize: '3.5rem', }}> </i>
+                <Card.Body className="">
                     <Card.Title> {title} </Card.Title>
-                    <Card.Text> {text} </Card.Text>
+                    <Card.Text> {description} </Card.Text>
+                    {
+                        features.map((elm, i)=>( <Card.Text key={i}> {elm} </Card.Text> ))
+                    }
                 </Card.Body>
             </Card>
         </Col>

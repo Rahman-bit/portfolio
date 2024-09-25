@@ -1,0 +1,72 @@
+
+@import './scssContant.scss';
+
+.card-hover {
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+  }
+  
+  .card-hover::before {
+    content: "";
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffc107;
+    transition: top 0.7s ease-in-out; 
+  }
+  
+  .card-hover:hover::before {
+    top: 0;
+  }
+  
+  .card-hover:hover {
+    background-color: rgba(255, 217, 0, 0.2); 
+    color: black; 
+  }
+  
+  .card-hover:hover .card-title,
+  .card-hover:hover .card-text {
+    color: black; 
+  }
+  
+  .card-hover i {
+    color: #4191f1;
+    transition: color 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, color 0.4s ease-in-out; 
+    transform: scale(0.95);
+  }
+  
+  .card-hover:hover i {
+    color: rgb(2, 2, 2); 
+    z-index: 1;
+    transition: 0.4s ease-in-out;
+    transform: scale(1.05);
+  }
+  .card-hover:hover .card-body{
+    z-index: 1;
+  }
+
+  #card-wraper{
+    margin: 0px 50px;
+  }
+  .card-fixed-width {
+    width: 100%; 
+  }
+
+  
+  @media (max-width: 768px) {
+    #card-wraper{
+        margin: 0px !important;
+      }
+    .card-fixed-width {
+      width: 100%; 
+    }
+  }
+  
+
+
+
+        

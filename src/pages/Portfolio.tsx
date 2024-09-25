@@ -15,7 +15,8 @@ const Portfolio = () => {
             <Card className="text-white portfolioCard">
               <Card.Body>
                 <Card.Text> 
-                    Hi, I'm Rahaman, a passionate Frontend Developer with a knack for creating stunning web applications. With a background in computer science and over four years of experience in the industry, I specialize in React, JavaScript, and responsive design. I'm committed to building efficient and scalable web solutions.
+                ReactJS developer with over 3.5 years of expertise in building high- performance, scalable web applications. Proficient in ReactJS, JavaScript (ES6), and modern frontend technologies, with deep experience in developing Single Page Applications (SPAs) and optimizing web performance.
+                 Skilled in Redux for efficient state management and seamlessly integrating backend services. A strong collaborator, committed to delivering responsive, high-quality code in dynamic, fast-paced environments.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -29,10 +30,14 @@ const Portfolio = () => {
           <Card className="text-white portfolioCard">
               <Card.Body>
                 <Card.Text> 
-                  <p>Languages: JavaScript, TypeScript, HTML, CSS</p>
-                  <p>Frameworks: React</p>
-                  <p>Tools: Git, GitHub, vsCode</p>
-                  <p>Soft Skills: Team collaboration, Problem-solving, Agile methodologies.</p>                </Card.Text>
+                  <p><b>Frontend Technologies: </b>ReactJS, JavaScript (ES6+), HTML5, CSS3, Bootstrap 3/4/5, jQuery, SCSS, JSON, AJAX.</p>
+                  <p><b>State Management: </b>Redux, React Hooks (useState, useEffect, useMemo, useCallback).</p>
+                  <p><b>Version Control: </b>Git, SVN.</p>
+                  <p><b>Responsive Web Design: </b>Experience with UI Compatibility across Desktop, Tablet, and Mobile (iOS, Android).</p>                </Card.Text>
+                  <p><b>Theming with SCSS: </b>Expertise in @import, @mixin, @extend, and SCSS functions for reusable, scalable styles.</p>
+                  <p><b>Debugging Tools: </b>Chrome Developer Tools, Firebug.</p>
+                  <p><b>Soft Skills: </b>Strong communication, leadership, decision-making, and problem-solving skills.                  </p>
+                  <p><b>Agile Methodologies: </b>SCRUM, JIRA</p>
               </Card.Body>
             </Card>
           </Col>
@@ -83,27 +88,19 @@ const Portfolio = () => {
                     <h5>Bachelor of Science in Computer Science</h5>
                     <p>Institution : Rayaalaseema Univercity Kurnool</p>
                     <p>Graduation Date : May 2019</p>
+                    <p>GPA : 7.7</p>
                   </Card.Text>
                 </Card.Body>
               </Card>
           </Col>
       </Row>
-      <Row className="flex-column mb-5">
+      <Row className="flex-column pb-5">
           <Col className='py-3 d-flex align-items-center'>
               <h2 className="title_wraper"><span>Get</span> In Touch</h2>
           </Col>
           <Col>
               <SocialMediaLinks />
           </Col>
-      </Row>
-      <Row>
-        <Col className="p-0">
-        {/* <CarouselImgs
-          imgOne = {'src/assets/sunset.jpg'}
-          imgTwo = {'src/assets/sunset2.jpg'}
-          imgThree = {'src/assets/hells.jpg'}
-          /> */}
-        </Col>
       </Row>
     </Container>
   )

@@ -8,6 +8,8 @@ import Contact from "./pages/Contact";
 import NavigationBar from "./components/NavigationBar";
 import Admin from "./pages/Admin";
 import WhatsappIcon from './components/WhatsappIcon';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {
 

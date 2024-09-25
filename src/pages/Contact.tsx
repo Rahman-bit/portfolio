@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Container, Row, Col, Form, InputGroup, Button, Card } from "react-bootstrap"
 import CustomeTextArea from "../components/CustomeTextArea";
+import SocialMediaLinks from './SocialMediaLinks';
 import axios from 'axios';
 import './contact.scss';
 
@@ -42,7 +43,7 @@ const Contact: React.FC  = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        withCredentials: true, 
+        withCredentials: true,
       });
       console.log("Response from server:", response.data);
     } catch (error) {
@@ -105,13 +106,21 @@ const Contact: React.FC  = () => {
                             </InputGroup>
                           </Form.Group>
                           <Col xs md ={10}>
-                            <Button className="mt-4 w-100" size='sm' type="submit">Submit form</Button>
+                            <Button className="mt-4 w-100" size='sm' type="submit">Send Message</Button>
                           </Col>
                       </Row>
                     </Form>
                 </Card.Body>
               </Card>
             </Col>
+          </Row>
+          <Row className="flex-column">
+              <Col className='py-3 d-flex align-items-center'>
+                  <h2 className="title_wraper"><span>Get</span> In Touch</h2>
+              </Col>
+              <Col className="pb-5">
+                  <SocialMediaLinks />
+              </Col>
           </Row>
       </div>
     </Container>
