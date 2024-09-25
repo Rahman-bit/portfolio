@@ -1,4 +1,4 @@
-import { Container, Row, Col, Image, Card, Button } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import '../scss/app.scss';
 import { Link } from 'react-router-dom';
 import Cards from '../components/Cards';
